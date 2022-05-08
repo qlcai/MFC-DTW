@@ -1,6 +1,6 @@
-基于动态时间弯曲的多元时间序列模糊聚类
+## 基于动态时间弯曲的多元时间序列模糊聚类
 
-Dynamic Time Warping based Fuzzy Clustering for Multivariate Time Series
+## Dynamic Time Warping based Fuzzy Clustering for Multivariate Time Series
 
 - data
 

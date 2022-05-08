@@ -1,8 +1,6 @@
-# 基于动态时间弯曲的多元时间序列模糊聚类
+基于动态时间弯曲的多元时间序列模糊聚类
 
-# Dynamic Time Warping based Fuzzy Clustering for Multivariate Time Series
-
-“基于动态时间弯曲的多元时间序列模糊聚类” 的pythton实现
+Dynamic Time Warping based Fuzzy Clustering for Multivariate Time Series
 
 - data
 
@@ -10,16 +8,8 @@
 
 - src
 
-  RI_experiment：在15个数据集上进行聚类的代码（最优参数下）
+  RI_experiment：在15个数据集上进行聚类（最优参数下）
 
-  utils：WDTW-FCM，DPC，DTW的实现代码
-
-## 依赖
-
-- Python 3
-- numba
-- numpy
-- scipy
 
 ## 数据集
 
@@ -47,10 +37,6 @@
 
   其他：Multivariate LSTM-FCNs for time series classification，https://github.com/houshd/MLSTM-FCN
 
-
-## 运行模型
-
-运行RI_experiment中WalkvsRun.py~uwave.py来对15个数据集进行聚类
 
 ## 结果
 

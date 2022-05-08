@@ -80,4 +80,3 @@ LI H, WEI M. Fuzzy clustering based on feature weights for multivariate time ser
 
 ------
 
-苑瀚洋，浙江大学软件学院，yuanhanyang@zju.edu.cn

@@ -1,21 +1,22 @@
-## 基于动态时间弯曲的多元时间序列模糊聚类
+## Unsupervised Distance Metric Learning for Anomaly Detection over Multivariate Time Series
 
-## Dynamic Time Warping based Fuzzy Clustering for Multivariate Time Series
-
+## Files
 - data
 
-  AUSLAN~uWave：15个多元时间序列数据集
+  15 datasets for clustering and 3 datasets for anomaly detection 
+  
 
 - src
 
-  RI_experiment：在15个数据集上进行聚类（最优参数下）
+  RI_experiment：Clustering on 15 datasets, respectively.
+  utils: The FCM-wDTW model
 
 
-## 数据集
+## Datasets
 
 - BAYDOGAN M G. Multivariate time series classification datasets[Z]. 2019. http://www.mustafabaydogan.com/files/viewcategory/20-data-sets.html
 
-  | 数据集                | 维度 | 样本长度   | 类别数目 | 样本数目 |
+  | Dataset               | Dim. | Length     | Class    | Size     |
   | :-------------------- | :--- | :--------- | :------- | :------- |
   | ArabicDigits          | 13   | 4 ~ 93     | 10       | 2200     |
   | AUSLAN                | 22   | 45 ~ 136   | 95       | 1425     |
@@ -33,14 +34,16 @@
   | LP4                   | 6    | 15         | 3        | 75       |
   | LP5                   | 6    | 15         | 5        | 100      |
 
-  LIbras，uWave：Bayesian Learning from Sequential Data using Gaussian Processes with Signature Covariances，https://github.com/tgcsaba/GPSig
+- Source
 
-  其他：Multivariate LSTM-FCNs for time series classification，https://github.com/houshd/MLSTM-FCN
+  LIbras, uWave: Bayesian Learning from Sequential Data using Gaussian Processes with Signature Covariances，https://github.com/tgcsaba/GPSig
+
+  Others: Multivariate LSTM-FCNs for time series classification，https://github.com/houshd/MLSTM-FCN
 
 
-## 结果
+## Results
 
-| 数据集     | *m*  | *q*  | WDTW  -FCM |   FCFW   | DTW-PAM | DTW-FCMDD | PDC  |    CD    | GAK-DBA | soft-DTW |
+| Dataset    | *m*  | *q*  | FCM-wDTW   |   FCFW   | PAM-DTW | FCMDD-DTW | PDC  |    CD    | GAK-DBA | soft-DTW |
 | :--------- | :--- | :--: | :--------: | :------: | :-----: | :-------: | ---- | :------: | :-----: | :------: |
 | Arabic.    | 1.1  |  4   |  **0.94**  |   0.93   |  0.76   |   0.67    | 0.11 |   0.91   |  0.85   |   0.89   |
 | AUSLAN     | 1.4  |  -4  |  **0.99**  |   0.98   |  0.98   | **0.99**  | 0.41 |   0.96   |  0.98   | **0.99** |
@@ -57,12 +60,7 @@
 | LP3        | 2.0  |  4   |  **0.77**  | **0.77** |  0.57   |   0.54    | 0.62 |   0.59   |  0.58   |   0.61   |
 | LP4        | 2.0  |  2   |    0.72    | **0.75** |  0.60   |   0.59    | 0.48 |   0.57   |  0.67   |   0.70   |
 | LP5        | 2.0  |  2   |    0.63    |   0.74   |  0.52   |   0.72    | 0.46 | **0.76** |  0.60   |   0.45   |
-| 平均排名   |      |      |  **1.67**  |   2.00   |  5.47   |   5.47    | 7.13 |   3.87   |  4.53   |   4.20   |
-| 胜率       |      |      |  **0.60**  |   0.47   |  0.00   |   0.07    | 0.00 |   0.20   |  0.00   |   0.07   |
-
-FCFW，DTW-PAM，DTW-FCMDD，PDC，CD，GAK-DBA，soft-DTW的实验结果来源于：
-
-LI H, WEI M. Fuzzy clustering based on feature weights for multivariate time series[J]. Knowledge-Based Systems, 2020, 197: 105907.
-
+| Avg. Rank  |      |      |  **1.67**  |   2.00   |  5.47   |   5.47    | 7.13 |   3.87   |  4.53   |   4.20   |
+| Win Rate   |      |      |  **0.60**  |   0.47   |  0.00   |   0.07    | 0.00 |   0.20   |  0.00   |   0.07   |
 ------
 

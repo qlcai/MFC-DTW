@@ -1,0 +1,50 @@
+{
+  "ArabicDigits": {
+    "class": 10,
+    "m": 1.1,
+    "q": 4,
+    "dc_intercept": 50
+  },
+  "AUSLAN": {
+    "class": 95,
+    "m": 1.4,
+    "q": -4,
+    "dc_intercept": 1
+  },
+  "CharacterTrajectories": {
+    "class": 20,
+    "m": 1.4,
+    "q": -2,
+    "dc_intercept": 2
+  },
+  "CMUsubject16": {
+    "class": 2,
+    "m": 1.4,
+    "q": -8,
+    "dc_intercept": 10
+  },
+  "ECG": {
+    "class": 2,
+    "m": 2,
+    "q": 2,
+    "dc_intercept": 30
+  },
+  "JapaneseVowels": {
+    "class": 9,
+    "m": 1.1,
+    "q": -10,
+    "dc_intercept": 30
+  },
+  "LP4": {
+    "class": 3,
+    "m": 2,
+    "q": 2,
+    "dc_intercept": 20
+  },
+  "uWave": {
+    "class": 8,
+    "m": 1.1,
+    "q": -10,
+    "dc_intercept": 10
+  }
+}
